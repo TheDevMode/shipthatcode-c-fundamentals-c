@@ -2,6 +2,6 @@
 
 int main(void) {
     // Print the greeting below.
-    printf("Hello, World!\n");
+    printf("Hello, C!\n");
     return 0;
 }
