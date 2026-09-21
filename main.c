@@ -3,23 +3,11 @@
 int main(void) {
     int n;
     scanf("%d", &n);
-
-    /* Print exactly one line:
-         n divisible by 15 -> FizzBuzz
-         n divisible by 3  -> Fizz
-         n divisible by 5  -> Buzz
-         anything else     -> n itself
-
-       TODO: write the if / else if / else chain. All four cases. */
-       if (n % 15 == 0) {
-        printf("FizzBuzz\n");
-    } else if (n % 3 == 0) {
-        printf("Fizz\n");
-    } else if (n % 5 == 0) {
-        printf("Buzz\n");
-    } else {
-        printf("%d\n", n);
+    // Loop and sum, then print.
+    long long results = 0;
+    for (int i = 1; i <= n; i++) {
+        results += i;
     }
-
+    printf("%lld\n", results);
     return 0;
 }
