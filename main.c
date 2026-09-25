@@ -1,13 +1,13 @@
 #include <stdio.h>
 
+int square(int n) {
+    // Return n * n.
+    return n * n;
+}
+
 int main(void) {
     int n;
     scanf("%d", &n);
-    // Loop and sum, then print.
-    long long results = 0;
-    for (int i = 1; i <= n; i++) {
-        results += i;
-    }
-    printf("%lld\n", results);
+    printf("%d\n", square(n));
     return 0;
 }
